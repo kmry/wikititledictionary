@@ -10,5 +10,5 @@ libraryDependencies ++= Seq(
   "com.softwaremill.macwire" %% "macrosakka" % "2.3.1" % "provided",
   "com.softwaremill.macwire" %% "util" % "2.3.1",
   "com.softwaremill.macwire" %% "proxy" % "2.3.1",
-  "org.wvlet.airframe" %% "airframe" % "0.69",
+  "org.wvlet.airframe" %% "airframe" % "20.4.0",
 )

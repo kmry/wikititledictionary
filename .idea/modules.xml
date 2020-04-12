@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-di-library-comparison.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-di-library-comparison.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala-di-library-comparison-build.iml" filepath="$PROJECT_DIR$/.idea/modules/scala-di-library-comparison-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wikititledictionary.iml" filepath="$PROJECT_DIR$/.idea/modules/wikititledictionary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/wikititledictionary-build.iml" filepath="$PROJECT_DIR$/.idea/modules/wikititledictionary-build.iml" />
     </modules>
   </component>
 </project>
