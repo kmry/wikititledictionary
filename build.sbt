@@ -1,8 +1,8 @@
-name := "scala-di-library-comparison"
+name := "wikititledictionary"
 
 version := "0.1"
 
-scalaVersion := "2.12.7"
+scalaVersion := "2.12.11"
 
 libraryDependencies ++= Seq(
   "com.google.inject" % "guice" % "4.2.1",
