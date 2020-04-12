@@ -15,7 +15,8 @@ class TitleInputRepositoryImplMock extends TitleInputRepository {
       |3049334:775:さくらももこ
       |3049334:776:佐江明
       |3049334:777:佐々木淳子
-      |""".stripMargin.split("\\n")
+      |""".stripMargin.linesIterator.toSeq
+
     dic.flatMap {s => convertFromTitleString(s)}
   }
 

@@ -5,7 +5,9 @@ import com.graphsaga.wiki.repo.TitleInputRepository
 import com.graphsaga.wiki.repo.input.TitleInput
 
 object HiraganaService {
-  private def isHiraganaName(str:String) = str.matches("""/^[ぁ-ん]+$/""")
+  val MATCH_KATAKANA = "^[\\u30A0-\\u30FF]+$"
+  val MATCH_HIRAGANA = "^[\\u3040-\\u309F]+$"
+  private def isHiraganaName(str:String) = str.matches(MATCH_HIRAGANA)
   private def getAllTitleString (seq:Seq[TitleInput]): String =
     seq.map{t => t.title}.mkString(", ")
 
@@ -18,18 +20,16 @@ object HiraganaService {
     println("見つかったタイトルは:"+ getAllTitleString(titleSeq))
     val hiraganatitleSeq = titleSeq.filter (t => isHiraganaName(t.title))
     if (hiraganatitleSeq.isEmpty) {
-      println("ひらがなを含むタイトルは見つかりませんでした。")
+      println("『ひらがな』のみを含むタイトルは見つかりませんでした。")
       return
     }
 
-    hiraganatitleSeq.foreach{t =>
-      println(s"そのうち、ひらがなを含むタイトルです : ${t.title}")
-    }
+    hiraganatitleSeq.foreach{t =>t.show}
   }
 
 }
 /**********************************
- * form用正規表現判定/備忘
+ * form用正規表現判定/備忘 java/scalaでは工夫が必要？
  * https://qiita.com/fubarworld2/items/9da655df4d6d69750c06
  **********************************
 全角ひらがな                    /^[ぁ-ん]+$/
@@ -40,6 +40,17 @@ object HiraganaService {
 全角ひらがな、漢字               /^[一-龥ぁ-ん]/
 全角ひらがな、全角カタカナ、漢字      /^[ぁ-んァ-ン一-龥]/
 
+ **********************************
+ * Javaで入力チェックを正規表現で行う
+ **********************************
+
+ 「ASCII文字」のみ  val MATCH_ASCII = "^[\\u0020-\\u007E]+$";
+「英字」のみ        val MATCH_ALPHA = "^[a-zA-Z]+$";
+「数字」のみ        val MATCH_NUMBER = "^[0-9]+$";
+「ひらがな」のみ     val MATCH_HIRAGANA = "^[\\u3040-\\u309F]+$";
+「カタカナ」のみ     val MATCH_KATAKANA = "^[\\u30A0-\\u30FF]+$";
+「半カタカナ」のみ    val MATCH_HANKANA = "^[\\uFF65-\\uFF9F]+$";
+「全角文字」のみ      val MATCH_ZENKAKU = "^[\\u3040-\\u30FF]+$";
  **********************************
  *Scala: 正規表現でマッチするかどうか調べる方法
  * https://qiita.com/suin/items/63703ad9fd538748ee46
