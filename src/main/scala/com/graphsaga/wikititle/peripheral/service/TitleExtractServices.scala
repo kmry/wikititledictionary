@@ -1,7 +1,7 @@
-package com.graphsaga.wiki.peripheral.service
+package com.graphsaga.wikititle.peripheral.service
 
-import com.graphsaga.wiki.domain.classifier.GyoOfJapanese
-import com.graphsaga.wiki.peripheral.repo.TitleInputRepository
+import com.graphsaga.wikititle.domain.classifier.GyoOfJapanese
+import com.graphsaga.wikititle.peripheral.repo.TitleInputRepository
 
 class TitleExtractService_pure_scala(titleInputRepository: TitleInputRepository) {
   def printAllHiraganaName(GyoOfJapanese:GyoOfJapanese): Unit = {

@@ -2,13 +2,13 @@
  * forked from bigwheel/scala-di-library-comparison
  */
 
-package com.graphsaga.wiki.riki.app
+package com.graphsaga.wikititle.riki.app
 
-import com.graphsaga.wiki.riki.module.runner.TitleExtractRunners
+import com.graphsaga.wikititle.riki.module.runner.TitleExtractRunners
 
 object Main {
   import TitleExtractRunners._
-  import com.graphsaga.wiki.domain.classifier.provider.GyoOfJapaneseProvider._
+  import com.graphsaga.wikititle.domain.classifier.provider.GyoOfJapaneseProvider._
 
   def main(args: Array[String]): Unit = {
     PureRun(あ行).run

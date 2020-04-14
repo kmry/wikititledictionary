@@ -1,8 +1,8 @@
-package com.graphsaga.wiki.domain.classifier.provider
+package com.graphsaga.wikititle.domain.classifier.provider
 
 import java.lang.reflect.Method
 
-import com.graphsaga.wiki.domain.classifier.{A, GyoOfJapanese, Ka, Na, Sa, Ta}
+import com.graphsaga.wikititle.domain.classifier.{A, GyoOfJapanese, Ka, Na, Sa, Ta}
 
 object GyoOfJapaneseProvider{
   /*

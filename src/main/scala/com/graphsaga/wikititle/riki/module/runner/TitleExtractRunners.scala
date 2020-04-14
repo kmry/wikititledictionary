@@ -1,11 +1,11 @@
-package com.graphsaga.wiki.riki.module.runner
+package com.graphsaga.wikititle.riki.module.runner
 
 import com.google.inject.Guice
-import com.graphsaga.wiki.domain.classifier.GyoOfJapanese
-import com.graphsaga.wiki.riki.module.di.guice.TitleExtractRealModule
-import com.graphsaga.wiki.riki.module.di.wire.TitleExtractModule
-import com.graphsaga.wiki.peripheral.repo.{TitleInputRepository, TitleInputRepositoryImplMock}
-import com.graphsaga.wiki.peripheral.service.TitleExtractService_pure_scala
+import com.graphsaga.wikititle.domain.classifier.GyoOfJapanese
+import com.graphsaga.wikititle.riki.module.di.guice.TitleExtractRealModule
+import com.graphsaga.wikititle.riki.module.di.wire.TitleExtractModule
+import com.graphsaga.wikititle.peripheral.repo.{TitleInputRepository, TitleInputRepositoryImplMock}
+import com.graphsaga.wikititle.peripheral.service.TitleExtractService_pure_scala
 
 trait Runner {
   def run

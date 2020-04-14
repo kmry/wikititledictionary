@@ -1,4 +1,4 @@
-package com.graphsaga.wiki.domain.classifier
+package com.graphsaga.wikititle.domain.classifier
 
 /**
  *　ア行、カ行、サ行、タ行、ナ行

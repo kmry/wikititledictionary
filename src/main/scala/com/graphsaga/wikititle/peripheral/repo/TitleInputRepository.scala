@@ -1,7 +1,7 @@
-package com.graphsaga.wiki.peripheral.repo
+package com.graphsaga.wikititle.peripheral.repo
 
-import com.graphsaga.wiki.domain.classifier.GyoOfJapanese
-import com.graphsaga.wiki.peripheral.repo.input.TitleInput
+import com.graphsaga.wikititle.domain.classifier.GyoOfJapanese
+import com.graphsaga.wikititle.peripheral.repo.input.TitleInput
 
 trait TitleInputRepository {
 

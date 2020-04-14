@@ -1,8 +1,8 @@
-package com.graphsaga.wiki.peripheral.service
+package com.graphsaga.wikititle.peripheral.service
 
-import com.graphsaga.wiki.domain.classifier.GyoOfJapanese
-import com.graphsaga.wiki.peripheral.repo.TitleInputRepository
-import com.graphsaga.wiki.peripheral.repo.input.TitleInput
+import com.graphsaga.wikititle.domain.classifier.GyoOfJapanese
+import com.graphsaga.wikititle.peripheral.repo.TitleInputRepository
+import com.graphsaga.wikititle.peripheral.repo.input.TitleInput
 
 object HiraganaService {
   val MATCH_KATAKANA = "^[\\u30A0-\\u30FF]+$"

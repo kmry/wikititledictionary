@@ -1,4 +1,4 @@
-package com.graphsaga.wiki.riki.settings
+package com.graphsaga.wikititle.riki.settings
 
 import org.apache.spark.sql.{SparkSession,Encoders}
 
