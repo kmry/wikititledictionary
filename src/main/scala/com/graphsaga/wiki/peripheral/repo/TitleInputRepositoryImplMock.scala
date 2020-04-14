@@ -1,7 +1,7 @@
-package com.graphsaga.wiki.repo
+package com.graphsaga.wiki.peripheral.repo
 
 import com.graphsaga.wiki.domain.classifier.{A, GyoOfJapanese, Sa}
-import com.graphsaga.wiki.repo.input.TitleInput
+import com.graphsaga.wiki.peripheral.repo.input.TitleInput
 
 class TitleInputRepositoryImplMock extends TitleInputRepository {
   //extracted from wikipedia dump : https://dumps.wikimedia.org/jawiki/

@@ -2,9 +2,9 @@
  * forked from bigwheel/scala-di-library-comparison
  */
 
-package com.graphsaga
+package com.graphsaga.wiki.riki.app
 
-import com.graphsaga.wiki.job.module.runner.TitleExtractRunners
+import com.graphsaga.wiki.riki.module.runner.TitleExtractRunners
 
 object Main {
   import TitleExtractRunners._

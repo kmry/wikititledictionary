@@ -1,4 +1,4 @@
-package com.graphsaga.wiki.repo.input
+package com.graphsaga.wiki.peripheral.repo.input
 
 case class TitleInput (serial:Int, branch:Int, title:String){
   def show = {

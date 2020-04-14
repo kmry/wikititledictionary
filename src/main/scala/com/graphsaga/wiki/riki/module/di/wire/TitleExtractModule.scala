@@ -1,7 +1,7 @@
-package com.graphsaga.wiki.job.module.di.wire
+package com.graphsaga.wiki.riki.module.di.wire
 
-import com.graphsaga.wiki.repo.{TitleInputRepository, TitleInputRepositoryImplMock}
-import com.graphsaga.wiki.service.TitleExtractService_macwire
+import com.graphsaga.wiki.peripheral.repo.{TitleInputRepository, TitleInputRepositoryImplMock}
+import com.graphsaga.wiki.peripheral.service.TitleExtractService_macwire
 import com.softwaremill.macwire._
 
 class TitleExtractModule {
