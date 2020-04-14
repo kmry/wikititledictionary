@@ -13,8 +13,8 @@ object Main {
   def main(args: Array[String]): Unit = {
     PureRun(あ行).run
     WireRun(か行).run
-    GuiceRun(さ行).run
-    AirRun(た行).run
+    WireRun(さ行).run
+    WireRun(た行).run
 
   }
 }

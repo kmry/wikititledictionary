@@ -11,20 +11,6 @@ class TitleExtractService_pure_scala(titleInputRepository: TitleInputRepository)
   }
 }
 
-class TitleExtractService_google_guice @Inject() (titleInputRepository: TitleInputRepository) {
-  def printAllHiraganaName(GyoOfJapanese:GyoOfJapanese): Unit = {
-    println("Google Guiceにて :")
-    HiraganaService.printHiraganaNameOnly(titleInputRepository, GyoOfJapanese)
-  }
-}
-
-class TitleExtractService_airframe(titleInputRepository: TitleInputRepository) {
-  def printAllHiraganaName(GyoOfJapanese:GyoOfJapanese): Unit = {
-    println("Airframeにて :")
-    HiraganaService.printHiraganaNameOnly(titleInputRepository, GyoOfJapanese)
-  }
-}
-
 class TitleExtractService_macwire(titleInputRepository: TitleInputRepository) {
   def printAllHiraganaName(GyoOfJapanese:GyoOfJapanese): Unit = {
     println("Macwireにて :")
