@@ -3,7 +3,6 @@ package com.graphsaga.wikititle.peripheral.service
 import com.graphsaga.wikititle.domain.classifier.GyoOfJapanese
 import com.graphsaga.wikititle.peripheral.repo.TitleInputRepository
 import com.graphsaga.wikititle.peripheral.repo.input.TitleInput
-
 object HiraganaService {
   val MATCH_KATAKANA = "^[\\u30A0-\\u30FF]+$"
   val MATCH_HIRAGANA = "^[\\u3040-\\u309F]+$"

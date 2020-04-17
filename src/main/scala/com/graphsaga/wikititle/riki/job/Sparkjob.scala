@@ -4,4 +4,5 @@ import com.graphsaga.wikititle.riki.settings.SimpleSetting
 
 class Sparkjob {
   val spark = SimpleSetting.getRedisSpark
+
 }
