@@ -1,0 +1,11 @@
+Ａ：図書カードの URL は、以下のように決めています。
+
+　http://www.aozora.gr.jp/cards/xxxxxx/cardyyyyy.html
+　　xxxxxxは人物 ID、先頭ゼロの6桁固定。
+　　yyyyyは作品 ID、先頭ゼロなし、桁数は不定。
+
+　例えば、愛知敬一（人物 ID：1234）「ファラデーの伝」（作品 ID：46340）の図書カードの URL は、以下のように決まります。
+　http://www.aozora.gr.jp/cards/001234/card46340.html
+
+　その他、書誌データを作る際の方針は、「青空文庫における書誌データのとりかた」（http://www.aozora.gr.jp/metadata_collection/index.html）に記してあります。
+　なお個別ファイルで、46340_24939.html というように、作品IDともうひとつ数字がつけられていますが、これは全ファイルの通し番号です。ファイルが更新されるたびに変わりますので、ご注意ください。 

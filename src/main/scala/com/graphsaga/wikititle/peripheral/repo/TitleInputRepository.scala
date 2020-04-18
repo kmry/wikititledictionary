@@ -2,10 +2,10 @@ package com.graphsaga.wikititle.peripheral.repo
 
 import com.graphsaga.wikititle.domain.classifier.GyoOfJapanese
 import com.graphsaga.wikititle.peripheral.repo.input.TitleInput
+import org.apache.spark.sql.{Dataset, SparkSession}
 
 trait TitleInputRepository {
-
-  import com.graphsaga.util.StringUtils.StringImprovements
+  import com.graphsaga.util.string.StringCastUtils._
 
   /**
    * getTitleSeqInメソッド:
@@ -15,7 +15,7 @@ trait TitleInputRepository {
    * @return wikipediaのタイトルのシーケンス(Seq)
    */
   def getTitleSeqIn(GyoOfJapanese:GyoOfJapanese, limit:Int = -1): Seq[TitleInput]
-
+  def getTitleInputDs(implicit spark: SparkSession): Dataset[TitleInput]
   protected def convertFromTitleString(ts:String):Option[TitleInput] ={
     val arr = ts.split(":")
     if (arr.size < 2) return None

@@ -5,6 +5,7 @@ case class TitleInput (serial:Int, branch:Int, title:String){
     println(s"シリアル番号:枝番号 = $serial:$branch")
     println(s"　　　 　　タイトル = $title")
   }
+
 }
 
 

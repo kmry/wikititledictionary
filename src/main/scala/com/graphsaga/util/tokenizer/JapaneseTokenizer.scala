@@ -5,9 +5,11 @@ package com.graphsaga.util.tokenizer
   // https://qiita.com/takayuki_tk
 
 import org.apache.commons.lang3._
-import com.atilika.kuromoji.ipadic.Token;
-import com.atilika.kuromoji.ipadic.Tokenizer;
+import com.atilika.kuromoji.ipadic.Token
+import com.atilika.kuromoji.ipadic.Tokenizer
+import com.graphsaga.util.tokenizer.model.{Element, WordClass}
 import com.ibm.icu.text._
+
 import scala.collection.JavaConversions._
 
 object JapaneseTokenizer {

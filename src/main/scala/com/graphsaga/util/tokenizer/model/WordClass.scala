@@ -1,5 +1,6 @@
-package com.graphsaga.util.tokenizer
-  // Special thanks for:
+package com.graphsaga.util.tokenizer.model
+
+// Special thanks for:
   // https://qiita.com/takayuki_tk
 
 sealed trait WordClass

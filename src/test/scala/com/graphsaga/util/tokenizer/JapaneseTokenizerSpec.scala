@@ -2,8 +2,8 @@ package com.graphsaga.util.tokenizer
   // Special thanks for:
   // https://qiita.com/takayuki_tk
 
-import org.scalatest.{ FunSpec, Matchers }
-
+import com.graphsaga.util.tokenizer.model.{Noun, Verb}
+import org.scalatest.{FunSpec, Matchers}
 import org.scalatest.matchers._
 
 class JapaneseTokenizerSpec extends FunSpec with Matchers {

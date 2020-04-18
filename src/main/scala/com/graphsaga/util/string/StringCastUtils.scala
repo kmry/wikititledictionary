@@ -1,6 +1,6 @@
-package com.graphsaga.util
+package com.graphsaga.util.string
 
-object StringUtils {
+object StringCastUtils {
   /*
    *  Safely parsing Strings to numbers in Scala
    *  https://coderwall.com/p/lcxjzw/safely-parsing-strings-to-numbers-in-scala

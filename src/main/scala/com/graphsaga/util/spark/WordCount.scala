@@ -1,4 +1,4 @@
-package com.graphsaga.util
+package com.graphsaga.util.spark
 
 import com.atilika.kuromoji.ipadic.Tokenizer
 import org.apache.spark.SparkContext

@@ -2,6 +2,7 @@ package com.graphsaga.wikititle.peripheral.repo
 
 import com.graphsaga.wikititle.domain.classifier.{A, GyoOfJapanese, Sa}
 import com.graphsaga.wikititle.peripheral.repo.input.TitleInput
+import org.apache.spark.sql.{Dataset, SparkSession}
 
 class TitleInputRepositoryImplMock extends TitleInputRepository {
   //extracted from wikipedia dump : https://dumps.wikimedia.org/jawiki/
@@ -20,6 +21,10 @@ class TitleInputRepositoryImplMock extends TitleInputRepository {
     dic.flatMap {s => convertFromTitleString(s)}
   }
 
+  def getTitleInputDs(implicit spark: SparkSession): Dataset[TitleInput]= {
+    import spark.implicits._
+    getTitleSeqOfSa().toDS()
+  }
   override def getTitleSeqIn(GyoOfJapanese: GyoOfJapanese, limit: Int): Seq[TitleInput] = {
     GyoOfJapanese match {
       case A => Seq(TitleInput(-1,-1,"あんぱんまん"))
